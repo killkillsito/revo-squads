@@ -1,0 +1,692 @@
+body {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif !important;
+  cursor: auto !important;
+}
+
+.gfxsquan-menu-contain {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70vh;
+  height: 60vh;
+  background-color: transparent;
+}
+.gfxsquan-menu-contain .gfxsquan-menu-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 10%;
+}
+.gfxsquan-menu-contain .gfxsquan-menu-header .header-create {
+  position: relative;
+  width: 2.5vh;
+  height: 2.5vh;
+  border-radius: 100px;
+  background: rgba(50, 181, 157, 0.45);
+  border: 2px solid #32B59D;
+  box-sizing: border-box;
+  transition: 250ms background;
+}
+.gfxsquan-menu-contain .gfxsquan-menu-header .header-create:hover {
+  background: rgb(50, 181, 157);
+}
+.gfxsquan-menu-contain .gfxsquan-menu-header .header-create p {
+  position: relative;
+  width: 2vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.7vh;
+  font-weight: 700;
+  margin: 0;
+  color: white;
+}
+.gfxsquan-menu-contain .gfxsquan-menu-header .header-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  width: 18vh;
+  height: 100%;
+  background: #222528;
+  border-radius: 5px 0px 0px 0px;
+  -webkit-clip-path: polygon(0 0, 80% 0%, 100% 100%, 0% 100%);
+          clip-path: polygon(0 0, 80% 0%, 100% 100%, 0% 100%);
+}
+.gfxsquan-menu-contain .gfxsquan-menu-header .header-title p {
+  position: relative;
+  font-size: 1.3vh;
+  font-weight: 700;
+  font-style: italic;
+  margin: 0vh 0vh 0vh 4vh;
+  color: #aeaeae;
+}
+.gfxsquan-menu-contain .gfxsquan-menu-header .header-title h1 {
+  position: relative;
+  font-size: 2.2vh;
+  font-weight: 700;
+  font-style: italic;
+  line-height: 1.9vh;
+  margin: 0vh 0vh 0vh 4vh;
+  color: white;
+}
+.gfxsquan-menu-contain .gfxsquan-squadmenu-content {
+  display: none;
+  position: relative;
+  width: 100%;
+  height: 90%;
+  background: #222528;
+  gap: 2vh;
+  border-radius: 0px 5px 5px 5px;
+  overflow-y: scroll;
+}
+.gfxsquan-menu-contain .gfxsquan-squadmenu-content::-webkit-scrollbar {
+  width: 0%;
+}
+.gfxsquan-menu-contain .gfxsquan-squadmenu-content .squadmenu-members-contain {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  height: 20vh;
+  margin-top: 2vh;
+}
+.gfxsquan-menu-contain .gfxsquan-squadmenu-content .squadmenu-members-contain .squadmenu-members-title {
+  position: relative;
+  width: 100%;
+  height: 3vh;
+}
+.gfxsquan-menu-contain .gfxsquan-squadmenu-content .squadmenu-members-contain .squadmenu-members-title p {
+  position: relative;
+  font-size: 1.3vh;
+  font-weight: 700;
+  font-style: italic;
+  margin: 0vh;
+  color: #aeaeae;
+}
+.gfxsquan-menu-contain .gfxsquan-squadmenu-content .squadmenu-members-contain .squadmenu-members-title h1 {
+  position: relative;
+  font-size: 2.2vh;
+  font-weight: 700;
+  font-style: italic;
+  line-height: 1.9vh;
+  margin: 0vh;
+  color: white;
+}
+.gfxsquan-menu-contain .gfxsquan-squadmenu-content .squadmenu-members-contain .squadmenu-setting {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.gfxsquan-menu-contain .gfxsquan-squadmenu-content .squadmenu-members-contain .squadmenu-setting .setting {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+  height: 6.5vh;
+  margin-top: 1.8vh;
+  border-radius: 2px;
+  background: #2C2F33;
+}
+.gfxsquan-menu-contain .gfxsquan-squadmenu-content .squadmenu-members-contain .squadmenu-setting .setting .setting-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  width: 60%;
+  height: 100%;
+  float: left;
+}
+.gfxsquan-menu-contain .gfxsquan-squadmenu-content .squadmenu-members-contain .squadmenu-setting .setting .setting-info h1 {
+  position: relative;
+  font-size: 1.8vh;
+  font-weight: 800;
+  margin: 0vh 0vh 0vh 2vh;
+  color: white;
+}
+.gfxsquan-menu-contain .gfxsquan-squadmenu-content .squadmenu-members-contain .squadmenu-setting .setting .setting-info p {
+  position: relative;
+  font-size: 1.4vh;
+  font-weight: 800;
+  margin: 0.5vh 0vh 0vh 2vh;
+  color: #aeaeae;
+}
+.gfxsquan-menu-contain .gfxsquan-squadmenu-content .squadmenu-members-contain .squadmenu-setting .setting .setting-check {
+  position: relative;
+  width: 9.5vh;
+  height: 4vh;
+  float: right;
+}
+.gfxsquan-menu-contain .gfxsquan-squadmenu-content .squadmenu-members-contain .squadmenu-setting .setting .setting-button {
+  position: relative;
+  width: 7vh;
+  height: 3vh;
+  float: right;
+  margin-right: 1vh;
+  border-radius: 1.5px;
+  border: #aeaeae 2px solid;
+  background-color: rgba(174, 174, 174, 0.4);
+  transition: 250ms all;
+}
+.gfxsquan-menu-contain .gfxsquan-squadmenu-content .squadmenu-members-contain .squadmenu-setting .setting .setting-button:hover {
+  border: #32B59D 2px solid;
+  background-color: rgba(50, 181, 157, 0.8);
+}
+.gfxsquan-menu-contain .gfxsquan-squadmenu-content .squadmenu-members-contain .squadmenu-setting .setting .setting-button p {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  font-size: 1vh;
+  font-weight: 600;
+  margin: 0;
+  font-family: "Montserrat";
+  color: white;
+}
+.gfxsquan-menu-contain .gfxsquan-squadmenu-content .squadmenu-members-contain .squadmenu-members {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: absolute;
+  width: 100%;
+  height: 80%;
+  bottom: 0;
+}
+.gfxsquan-menu-contain .gfxsquan-squadmenu-content .squadmenu-members-contain .squadmenu-members .member {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  width: 49%;
+  height: 40%;
+  background: #2C2F33;
+}
+.gfxsquan-menu-contain .gfxsquan-squadmenu-content .squadmenu-members-contain .squadmenu-members .member .buttons-div {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  position: absolute;
+  width: 6vh;
+  height: 2vh;
+  right: 0.6vh;
+  top: 0.5vh;
+}
+.gfxsquan-menu-contain .gfxsquan-squadmenu-content .squadmenu-members-contain .squadmenu-members .member .buttons-div .button {
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background: rgba(250, 70, 71, 0.3);
+  border: 1px solid #FA4647;
+  cursor: pointer !important;
+  transition: 250ms all;
+}
+.gfxsquan-menu-contain .gfxsquan-squadmenu-content .squadmenu-members-contain .squadmenu-members .member .buttons-div .button:hover {
+  background: rgb(250, 70, 71);
+}
+.gfxsquan-menu-contain .gfxsquan-squadmenu-content .squadmenu-members-contain .squadmenu-members .member .buttons-div .button p {
+  position: relative;
+  font-size: 1.3vh;
+  font-weight: 700;
+  margin: 0;
+  padding: 0vh 1vh 0vh 1vh;
+  color: white;
+}
+.gfxsquan-menu-contain .gfxsquan-squadmenu-content .squadmenu-members-contain .squadmenu-members .member img {
+  position: relative;
+  width: 5.5vh;
+  height: 5.5vh;
+  margin-left: 0.4vh;
+  border-radius: 3px;
+}
+.gfxsquan-menu-contain .gfxsquan-squadmenu-content .squadmenu-members-contain .squadmenu-members .member .members-informations {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.gfxsquan-menu-contain .gfxsquan-squadmenu-content .squadmenu-members-contain .squadmenu-members .member .members-informations h1 {
+  position: relative;
+  width: 20vh;
+  font-size: 2.2vh;
+  font-weight: 800;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0.3vh 0vh 0vh 0.5vh;
+  color: white;
+}
+.gfxsquan-menu-contain .gfxsquan-squadmenu-content .squadmenu-members-contain .squadmenu-members .member .members-informations .members-progressbars {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+  height: 1.5vh;
+  bottom: 0.5vh;
+}
+.gfxsquan-menu-contain .gfxsquan-squadmenu-content .squadmenu-members-contain .squadmenu-members .member .members-informations .members-progressbars .members-armor-bar {
+  position: relative;
+  width: 97%;
+  height: 25%;
+  -webkit-clip-path: polygon(0 0, 100% 0, 97% 100%, 0% 100%);
+          clip-path: polygon(0 0, 100% 0, 97% 100%, 0% 100%);
+  background: rgba(174, 174, 174, 0.4);
+}
+.gfxsquan-menu-contain .gfxsquan-squadmenu-content .squadmenu-members-contain .squadmenu-members .member .members-informations .members-progressbars .members-armor-bar .fill {
+  position: relative;
+  width: 60%;
+  height: 100%;
+  background: #EBEBEB;
+}
+.gfxsquan-menu-contain .gfxsquan-squadmenu-content .squadmenu-members-contain .squadmenu-members .member .members-informations .members-progressbars .members-hp-bar {
+  position: relative;
+  width: 95%;
+  height: 65%;
+  -webkit-clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
+          clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
+  background: rgba(174, 174, 174, 0.4);
+}
+.gfxsquan-menu-contain .gfxsquan-squadmenu-content .squadmenu-members-contain .squadmenu-members .member .members-informations .members-progressbars .members-hp-bar .fill {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #32B59D;
+}
+.gfxsquan-menu-contain .gfxsquan-menu-content {
+  position: relative;
+  width: 100%;
+  height: 90%;
+  background: #222528;
+  gap: 2vh;
+  border-radius: 0px 5px 5px 5px;
+  overflow-y: scroll;
+}
+.gfxsquan-menu-contain .gfxsquan-menu-content::-webkit-scrollbar {
+  width: 0%;
+}
+.gfxsquan-menu-contain .gfxsquan-menu-content .content-squads {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 98%;
+  height: 7vh;
+  margin: 1vh 0vh 1vh 0vh;
+  background: #2C2F33;
+  border-radius: 2.5px;
+}
+.gfxsquan-menu-contain .gfxsquan-menu-content .content-squads .squads-firstsections {
+  display: flex;
+  align-items: center;
+  gap: 0.5vh;
+  position: relative;
+  width: 80%;
+  height: 100%;
+}
+.gfxsquan-menu-contain .gfxsquan-menu-content .content-squads .squads-firstsections img {
+  position: relative;
+  width: 6vh;
+  height: 6vh;
+  margin-left: 0.5vh;
+  border-radius: 1.5px;
+}
+.gfxsquan-menu-contain .gfxsquan-menu-content .content-squads .squads-firstsections .firstsections-content {
+  position: relative;
+  width: 60vh;
+  height: 90%;
+}
+.gfxsquan-menu-contain .gfxsquan-menu-content .content-squads .squads-firstsections .firstsections-content h1 {
+  position: relative;
+  font-size: 1.8vh;
+  font-weight: 700;
+  margin: 0;
+  color: white;
+  font-family: "Montserrat";
+}
+.gfxsquan-menu-contain .gfxsquan-menu-content .content-squads .squads-firstsections .firstsections-content p {
+  position: relative;
+  font-size: 1.3vh;
+  font-weight: 700;
+  margin: 0;
+  color: #aeaeae;
+  font-family: "Montserrat";
+}
+.gfxsquan-menu-contain .gfxsquan-menu-content .content-squads .squads-firstsections .firstsections-content .firstsection-member {
+  position: relative;
+  width: 15vh;
+  height: 2vh;
+}
+.gfxsquan-menu-contain .gfxsquan-menu-content .content-squads .squads-firstsections .firstsections-content .firstsection-member img {
+  position: relative;
+  width: 2.3vh;
+  height: 2.3vh;
+  margin-left: 0.2vh;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+  border-radius: 100px;
+}
+.gfxsquan-menu-contain .gfxsquan-menu-content .content-squads .squads-secondsections {
+  position: relative;
+  width: 8vh;
+  height: 3vh;
+  background: rgba(50, 181, 157, 0.35);
+  border: 1px solid #32B59D;
+  border-radius: 2.5px;
+  margin-right: 3vh;
+  transition: 250ms background;
+}
+.gfxsquan-menu-contain .gfxsquan-menu-content .content-squads .squads-secondsections:hover {
+  background: rgb(50, 181, 157);
+}
+.gfxsquan-menu-contain .gfxsquan-menu-content .content-squads .squads-secondsections p {
+  position: relative;
+  font-size: 1.6vh;
+  font-weight: 700;
+  font-style: italic;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  color: white;
+}
+
+.gfxsquad {
+  display: none;
+  flex-direction: column-reverse;
+  gap: 0.5vh;
+  position: absolute;
+  width: 20vh;
+  height: 20vh;
+  bottom: 6.4vh;
+  left: 32vh;
+}
+.gfxsquad .member-dead {
+  background: #332C2C;
+  border: 1px solid rgba(174, 174, 174, 0.2);
+}
+.gfxsquad .member-dead:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 115%;
+  transform: translate(-50%, -50%);
+  width: 4vh;
+  height: 4vh;
+  background-image: url("img/dead-icon.png");
+  background-size: 3vh;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.gfxsquad .squad-member {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 23%;
+  border-radius: 2px;
+  background: #2C2F33;
+  border: 1px solid rgba(174, 174, 174, 0.2);
+}
+.gfxsquad .squad-member img {
+  position: relative;
+  width: 3.5vh;
+  height: 3.5vh;
+  margin-left: 0.4vh;
+  border-radius: 3px;
+}
+.gfxsquad .squad-member .members-informations {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.gfxsquad .squad-member .members-informations h1 {
+  position: relative;
+  width: 12vh;
+  font-size: 1.6vh;
+  font-weight: 800;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0.2vh 0vh 0vh 0.5vh;
+  color: white;
+}
+.gfxsquad .squad-member .members-informations .members-progressbars {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  width: 95%;
+  height: 1vh;
+  bottom: 0.5vh;
+}
+.gfxsquad .squad-member .members-informations .members-progressbars .members-armor-bar {
+  position: relative;
+  width: 97%;
+  height: 25%;
+  -webkit-clip-path: polygon(0 0, 100% 0, 97% 100%, 0% 100%);
+          clip-path: polygon(0 0, 100% 0, 97% 100%, 0% 100%);
+  background: rgba(174, 174, 174, 0.4);
+}
+.gfxsquad .squad-member .members-informations .members-progressbars .members-armor-bar .fill {
+  position: relative;
+  width: 60%;
+  height: 100%;
+  background: #EBEBEB;
+}
+.gfxsquad .squad-member .members-informations .members-progressbars .members-hp-bar {
+  position: relative;
+  width: 95%;
+  height: 65%;
+  -webkit-clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
+          clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
+  background: rgba(174, 174, 174, 0.4);
+}
+.gfxsquad .squad-member .members-informations .members-progressbars .members-hp-bar .fill {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #32B59D;
+}
+
+.toggleSwitch span span {
+  display: none;
+}
+
+.toggleSwitch {
+  display: inline-block;
+  top: 50%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  height: 18px;
+  position: absolute;
+  overflow: visible;
+  padding: 0;
+  cursor: pointer;
+  width: 40px;
+}
+
+.toggleSwitch * {
+  box-sizing: border-box;
+}
+
+.toggleSwitch label,
+.toggleSwitch > span {
+  line-height: 20px;
+  height: 20px;
+  vertical-align: middle;
+}
+
+.toggleSwitch input:focus ~ a,
+.toggleSwitch input:focus + label {
+  outline: none;
+}
+
+.toggleSwitch label {
+  position: relative;
+  z-index: 3;
+  display: block;
+  width: 100%;
+}
+
+.toggleSwitch input {
+  position: absolute;
+  opacity: 0;
+  z-index: 5;
+}
+
+.toggleSwitch > span {
+  position: absolute;
+  left: -50px;
+  width: 100%;
+  margin: 0;
+  padding-right: 50px;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.toggleSwitch > span span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  display: block;
+  width: 50%;
+  margin-left: 50px;
+  /* fivemsociety */
+  text-align: left;
+  font-size: 0.9em;
+  width: 100%;
+  left: 15%;
+  top: -1px;
+  opacity: 0;
+}
+
+.toggleSwitch a {
+  position: absolute;
+  right: 50%;
+  z-index: 4;
+  display: block;
+  height: 100%;
+  padding: 0;
+  left: 2px;
+  width: 8px;
+  background-size: cover;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(255, 255, 255);
+  /* fivemsociety */
+  transition: all 0.2s ease-out;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.toggleSwitch > span span:first-of-type {
+  color: #ccc;
+  opacity: 1;
+  left: 45%;
+}
+
+.toggleSwitch > span:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 50px;
+  top: -2px;
+  background-color: rgb(59, 59, 59);
+  border: 1px solid rgb(59, 59, 59);
+  border-radius: 2px;
+  transition: all 0.2s ease-out;
+}
+
+.toggleSwitch input:checked ~ a {
+  border-color: #fff;
+  left: 100%;
+}
+
+.toggleSwitch input:checked ~ span:before {
+  border-color: #32B59D;
+  box-shadow: inset 0 0 0 30px #32B59D;
+}
+
+.toggleSwitch input:checked ~ span span:first-of-type {
+  opacity: 0;
+}
+
+.toggleSwitch input:checked ~ span span:last-of-type {
+  opacity: 1;
+  color: #fff;
+}
+
+/* Switch Sizes */
+.toggleSwitch.large {
+  width: 60px;
+  height: 27px;
+}
+
+.toggleSwitch.large a {
+  width: 27px;
+}
+
+.toggleSwitch.large > span {
+  height: 29px;
+  /* fivemsociety */
+  line-height: 28px;
+}
+
+.toggleSwitch.large input:checked ~ a {
+  left: 41px;
+}
+
+.toggleSwitch.large > span span {
+  font-size: 1.1em;
+}
+
+.toggleSwitch.large > span span:first-of-type {
+  left: 50%;
+}
+
+.toggleSwitch.xlarge {
+  width: 80px;
+  height: 36px;
+}
+
+.toggleSwitch.xlarge a {
+  width: 36px;
+}
+
+.toggleSwitch.xlarge > span {
+  height: 38px;
+  line-height: 37px;
+}
+
+.toggleSwitch.xlarge input:checked ~ a {
+  left: 52px;
+}
+
+.toggleSwitch.xlarge > span span {
+  font-size: 1.4em;
+  /* fivemsociety */
+}
+
+.toggleSwitch.xlarge > span span:first-of-type {
+  left: 50%;
+}/*# sourceMappingURL=style.css.map */

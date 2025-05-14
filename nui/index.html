@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>GFX Squad</title>
+</head>
+<body>
+    <div class="gfxsquan-menu-contain">
+        <div class="gfxsquan-menu-header">
+            <div class="header-title"><p>PUBLIC</p><h1>SQUAD</h1></div>
+            <button class="header-create"><p>+</p></button>
+        </div>
+        <div class="gfxsquan-menu-content">
+          
+        </div> 
+        <div class="gfxsquan-squadmenu-content">
+            <div class="squadmenu-members-contain">
+                <div class="squadmenu-members-title">
+                    <p>SQUAD</p>
+                    <h1>MEMBERS</h1>
+                </div>
+                <div class="squadmenu-members">
+                    <div class="member">
+                        <img src="https://cdn.discordapp.com/attachments/804881334438854657/1026324900295753808/peeposnack.png" alt="">
+                        <div class="members-informations">
+                            <h1>NITROS</h1>
+                            <div class="members-progressbars">
+                                <div class="members-armor-bar"><div class="fill"></div></div>
+                                <div class="members-hp-bar"><div class="fill"></div></div>
+                            </div>
+                            <div class="buttons-div">
+                                <div class="button"><p>KICK</p></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="member">
+                        <img src="https://cdn.discordapp.com/attachments/804881334438854657/1026324900295753808/peeposnack.png" alt="">
+                        <div class="members-informations">
+                            <h1>NITROS</h1>
+                            <div class="members-progressbars">
+                                <div class="members-armor-bar"><div class="fill"></div></div>
+                                <div class="members-hp-bar"><div class="fill"></div></div>
+                            </div>
+                            <div class="buttons-div">
+                                <div class="button"><p>KICK</p></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="member">
+                        <img src="https://cdn.discordapp.com/attachments/804881334438854657/1026324900295753808/peeposnack.png" alt="">
+                        <div class="members-informations">
+                            <h1>NITROS</h1>
+                            <div class="members-progressbars">
+                                <div class="members-armor-bar"><div class="fill"></div></div>
+                                <div class="members-hp-bar"><div class="fill"></div></div>
+                            </div>
+                            <div class="buttons-div">
+                                <div class="button"><p>KICK</p></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="member">
+                        <img src="https://cdn.discordapp.com/attachments/804881334438854657/1026324900295753808/peeposnack.png" alt="">
+                        <div class="members-informations">
+                            <h1>NITROS</h1>
+                            <div class="members-progressbars">
+                                <div class="members-armor-bar"><div class="fill"></div></div>
+                                <div class="members-hp-bar"><div class="fill"></div></div>
+                            </div>
+                            <div class="buttons-div">
+                                <div class="button"><p>KICK</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="margin-top: .8vh !important;" class="squadmenu-members-contain">
+                <div class="squadmenu-members-title">
+                    <p>SQUAD</p>
+                    <h1>SETTINGS</h1>
+                </div>
+                <div class="squadmenu-setting">
+                    <div class="setting">
+                        <div class="setting-info">
+                            <h1>SQUAD HUD</h1>
+                            <p>Show/Hide squad hud</p>
+                        </div>
+                        <div class="setting-check">
+                            <label class="toggleSwitch nolabel">
+								<input type="checkbox" id="hudVar" checked/>
+								<span>
+								</span>
+								<a></a>
+							</label>
+                        </div>
+                    </div>
+                    <div class="setting">
+                        <div class="setting-info">
+                            <h1>PRIVATE</h1>
+                            <p>Set squad private/public</p>
+                        </div>
+                        <div class="setting-check">
+                            <label class="toggleSwitch nolabel">
+								<input type="checkbox" id="private" unchecked/>
+								<span>
+								</span>
+								<a></a>
+							</label>
+                        </div>
+                    </div>
+                    <div class="setting">
+                        <div class="setting-info">
+                            <h1>YOUR SQUAD</h1>
+                            <p>You can delete your squad</p>
+                        </div>
+                        <button id="disband" class="setting-button"><p>DISBAND</p></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="gfxsquad">
+        <div class="squad-member">
+            <img src="https://cdn.discordapp.com/attachments/804881334438854657/1026324900295753808/peeposnack.png" alt="">
+                <div class="members-informations">
+                    <h1>NITROS</h1>
+                    <div class="members-progressbars">
+                        <div class="members-armor-bar"><div class="fill"></div></div>
+                        <div class="members-hp-bar"><div class="fill"></div></div>
+                    </div>
+                </div>
+        </div>
+        <div class="squad-member">
+            <img src="https://cdn.discordapp.com/attachments/804881334438854657/1026324900295753808/peeposnack.png" alt="">
+                <div class="members-informations">
+                    <h1>NITROSdasasddassdadsasda</h1>
+                    <div class="members-progressbars">
+                        <div class="members-armor-bar"><div class="fill"></div></div>
+                        <div class="members-hp-bar"><div class="fill"></div></div>
+                    </div>
+                </div>
+        </div>
+        <div class="squad-member member-dead">
+            <img src="https://cdn.discordapp.com/attachments/804881334438854657/1026324900295753808/peeposnack.png" alt="">
+                <div class="members-informations">
+                    <h1>NITROS</h1>
+                    <div class="members-progressbars">
+                        <div class="members-armor-bar"><div class="fill"></div></div>
+                        <div class="members-hp-bar"><div class="fill"></div></div>
+                    </div>
+                </div>
+        </div>
+        <div class="squad-member">
+            <img src="https://cdn.discordapp.com/attachments/804881334438854657/1026324900295753808/peeposnack.png" alt="">
+                <div class="members-informations">
+                    <h1>NITROS</h1>
+                    <div class="members-progressbars">
+                        <div class="members-armor-bar"><div class="fill"></div></div>
+                        <div class="members-hp-bar"><div class="fill"></div></div>
+                    </div>
+                </div>
+        </div>
+    </div>
+</body>
+</html>
